@@ -1,5 +1,6 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 import { useTrademarkia } from '@/context/TrademarkiaContext';
+import Image from 'next/image';
 
 export default function SearchBar() {
   const { input, setInput, handleSearch } = useTrademarkia();
@@ -19,7 +20,7 @@ export default function SearchBar() {
   return (
     <div className="flex lg:flex-row flex-col items-center my-4 mx-6">
       <a href="./" className="inline-block">
-        <img
+        <Image
           className="mx-4 my-6 lg:my-0 w-32 h-auto lg:w-44"
           src="https://www.trademarkia.com/_next/image?url=%2Fassets%2Fimages%2Flogo_trademarkia.png&w=256&q=75"
           alt="Trademarkia Logo"
